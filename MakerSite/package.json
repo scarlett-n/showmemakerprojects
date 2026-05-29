@@ -1,0 +1,11 @@
+{
+  "name": "makersite",
+  "version": "0.1.0",
+  "description": "Small maker portfolio site",
+  "scripts": {
+    "start": "npx serve . -l 8000",
+    "live": "npx live-server ./ --port=8000"
+  },
+  "author": "",
+  "license": "MIT"
+}

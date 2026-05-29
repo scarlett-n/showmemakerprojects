@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --lime: #addb5c;
+  --pink: #ffaebc;
+  --mustard:#f6a74f;
+  --red: #ce1227;
+  --green:#6f7531;
+  --blue:#26888c;
+  --purple:#73479a;
+  --black:#232222;
+  --cream:#e9ebe2;
+  --offset:5px
+}
+
+body, button {
+    background-color: var(--lime);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+      font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    color: var(--black);
+}
+
+.title-text{
+    width:40vw;
+    padding-top:10vmin;
+}
+
+.buttons-container{
+width:70vw;
+height:50vh;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 40px;
+}
+
+.link-button, button{
+width:18vw;
+/* height:11vmax; */
+padding-left:15px;
+padding-right:15px;
+padding-top:15px;
+padding-bottom: 15px;
+text-decoration: none;
+color:var(--cream);
+-webkit-text-stroke: 1px var(--black);
+text-align: center;
+/* padding:5px; */
+margin:20px;
+border-radius: 0px;
+border: 3px solid var(--black);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-shadow: 8px 8px 0px var(--black);
+line-height: 4vmin;
+border-radius: 20PX;
+  will-change: transform;
+}
+
+.link-button > img{
+    width:8vmin;
+    position: absolute;
+}
+
+.show-me-text{
+font-size: 3.5vmin ;
+padding:0px;
+
+}
+
+.button-name-text{
+font-weight: 900;
+font-size: 4.5vmin ;
+}
+
+.cursed{
+background-color: var(--purple);
+ animation-name: floatAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+
+
+}
+.cursed > img{
+transform: translateX(-8vw) translateY(5vh);
+}
+.arduino{
+background-color: var(--blue);
+
+  animation-name: floatAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.arduino > img{
+transform: translateX(7vw) translateY(-5vh);
+}
+.weird{
+background-color: var(--mustard);
+ animation-name: floatAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
+}
+
+.weird > img{
+transform: translateX(-7vw) translateY(5vh);
+}
+.recycled{
+background-color: var(--green);
+ animation-name: floatAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.recycled > img{
+transform: translateX(-6vw) translateY(5vh);
+}
+.cute{
+background-color: var(--pink);
+ animation-name: floatAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+
+.cute > img{
+transform: translateX(-6vw) translateY(-5vh);
+}
+.accessible{
+background-color: var(--red);
+ animation-name: floatAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.accessible > img{
+transform: translateX(9vw) translateY(6vh);
+}
+
+.doom-scroll-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10vmin;
+    background-color: var(--pink);
+   box-shadow: 5px 5px 0px var(--black);
+    border-radius: 10px;
+border: 3px solid var(--black);
+text-align: center;
+}
+.doom-scroll-container div{
+    display: flex;
+    flex-direction: row;
+}
+
+.doom-scroll-container h2{
+    padding-top: 5vmin;
+    padding-bottom: 3vmin;
+    font-size: 9vmin;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.doom-scroll-container .link-button{
+    font-size:4vmin;
+}
+
+.yt-button{
+    background-color: var(--red);
+    
+}
+
+.insta-button{
+    background-color: var(--blue);
+}
+
+form{
+    margin-top:15vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mustard);
+  box-shadow: 5px 5px 0px var(--black);
+    border-radius: 10px;
+border: 3px solid var(--black);
+ padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+form h3{
+    font-size:8vmin
+}
+
+form input{
+    margin:10px;
+    width: 30vw;
+    height:4vmin;
+}
+
+form label{
+    font-size:3vmin;
+}
+
+
+
+form button {
+  font-weight: 600;
+  border: solid 3px var(--black);
+  outline: 0;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  letter-spacing: .08rem;
+  background-color: var(--cream);
+  /* border-radius: 10px; */
+  position: relative;
+  cursor: pointer;
+  /* z-index: 2; */
+  isolation: isolate;
+width:auto;
+  }
+
+  .credit{
+    padding:9px;
+  }
+  .credit a{
+    color: var(--green);
+    text-decoration: none;
+  }
+
+
+  @keyframes floatAnimation {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(3px, 6px); }
+  }
+
+  /* Mobile responsive adjustments for small device widths */
+  @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .buttons-container{
+      width: 92vw;
+      height: auto;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .link-button, button{
+      width: 44vw;
+      padding: 10px 12px;
+      margin: 8px;
+      line-height: normal;
+      box-shadow: 6px 6px 0px var(--black);
+      -webkit-text-stroke: 0.8px var(--black);
+      border-radius: 14px;
+    }
+
+    .link-button > img{
+      width: 6vmin;
+      position: relative;
+      transform: none;
+      margin-bottom: 6px;
+    }
+
+    .show-me-text{
+      font-size: 3.2vmin;
+    }
+
+    .button-name-text{
+      font-size: 5vmin;
+    }
+
+    form input{
+      width: 80vw;
+    }
+
+    .title-text{
+      width: 90vw;
+      padding-top: 8vmin;
+    }
+  }
+
+
+
+
