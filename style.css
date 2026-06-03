@@ -264,6 +264,20 @@ width:auto;
     text-decoration: none;
   }
 
+  .all-button{
+    text-decoration: none;
+  }
+
+  .all-button button{
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: var(--purple);
+    font-size: 3vmin;
+    cursor: pointer;
+  }
+
+
+
 
   @keyframes floatAnimation {
   0%, 100% { transform: translate(0, 0); }
@@ -312,8 +326,43 @@ width:auto;
       width: 90vw;
       padding-top: 8vmin;
     }
+
+
   }
 
+  /* list page */
+
+  .list-page{
+    display:block;
+    margin:2vmin;
+    line-height: 3vmin;
+  }
+
+  .allprojectstitle{
+    width: 40vw;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+
+  }
+
+  .list-page a{
+    display: block;
+    font-size: 3vmin;
+    color: var(--black);
+    text-decoration: none;
+    color:var(--black)
+    
+  }
+.backbutton{
+  position:absolute;
+  top:2vmin;
+  right:2vmin;
+  background-color: var(--pink); 
+  width: 8vw;
+  height: 8vw;
+  font-size: 6vmin;
+  cursor: pointer;
+}
 
 
 
