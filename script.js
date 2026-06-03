@@ -51,7 +51,7 @@ const arduinoLinks = [
     ["https://www.instagram.com/reels/DYC-d1oOqTw/", "Recieve a Divine Message"],
     ["https://www.instagram.com/reels/DV_IXSLjfHP/", "ASCII Aquarium"],
     ["https://www.instagram.com/reels/DYj13-7uDpR/", "Kid Art Button"],
-    ["https://www.instagram.com/reels/DXW4ZYHDNP2/", "Mini Speed Reading EReader"]
+    ["https://www.instagram.com/reels/DXW4ZYHDNP2/", "Mini Speed Reading EReader"],
     ["https://www.instagram.com/reels/DVUhCluEm4r/", "DIY Digital Camera"],
     ["https://www.instagram.com/reels/DXVOMxMgU0q/", "Ferry Departure Times Display"],
     ["https://www.instagram.com/reels/DXcxaSMEjqv/", "Hardcore Disco Ball"],
@@ -246,20 +246,20 @@ if (projectslistDiv) {
         ...cursedLinks,
         ...accessibleLinks
     ];
-allLinks.forEach((link, index) => {
-    if (link === undefined) {
-        console.error("Undefined at index:", index);
+// allLinks.forEach((link, index) => {
+//     if (link === undefined) {
+//         console.error("Undefined at index:", index);
+//     }
+// });
+    const titleSet = new Set();
+    for (const link of allLinks) {
+        const title = link[1];
+        if (titleSet.has(title)) {
+            continue;
+        }
+        titleSet.add(title);
+        allTitles += `<a href="${link[0]}"> ${title} &rarr;</a> <br>`;
     }
-});
-    // const titleSet = new Set();
-    // for (const link of allLinks) {
-    //     const title = link[1];
-    //     if (titleSet.has(title)) {
-    //         continue;
-    //     }
-    //     titleSet.add(title);
-    //     allTitles += `<a href="${link[0]}"> ${title} &rarr;</a> <br>`;
-    // }
 
     // Overwrite content 
     projectslistDiv.innerHTML = allTitles;
