@@ -246,16 +246,20 @@ if (projectslistDiv) {
         ...cursedLinks,
         ...accessibleLinks
     ];
-
-    const titleSet = new Set();
-    for (const link of allLinks) {
-        const title = link[1];
-        if (titleSet.has(title)) {
-            continue;
-        }
-        titleSet.add(title);
-        allTitles += `<a href="${link[0]}"> ${title} &rarr;</a> <br>`;
+allLinks.forEach((link, index) => {
+    if (link === undefined) {
+        console.error("Undefined at index:", index);
     }
+});
+    // const titleSet = new Set();
+    // for (const link of allLinks) {
+    //     const title = link[1];
+    //     if (titleSet.has(title)) {
+    //         continue;
+    //     }
+    //     titleSet.add(title);
+    //     allTitles += `<a href="${link[0]}"> ${title} &rarr;</a> <br>`;
+    // }
 
     // Overwrite content 
     projectslistDiv.innerHTML = allTitles;
